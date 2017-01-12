@@ -99,19 +99,44 @@ resource/layout/steamrootdialog.layout {
 			place [!$OSX] { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=122 }
 			place [$OSX] { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=20 }
 			place { control=account_balance region=header align=right y=11 height=30 margin-right=24 end-right=InboxButton }
-			place {
-				control=online_friends region=header align=right y=11 margin-right=34 end-right=account_balance
-				height=0
-			}
-			place {
-				control=view_friends region=header align=right y=11 width=60 margin-right=34 end-right=account_balance
-				height=0
-			}
+			
 
-		place { control=UINavigatorPanel width=max height=max }
+		place { control=UINavigatorPanel width=max height=max margin-bottom=46 }
 
-		region { name=downloads align=bottom height=80 width=max }
-			place { control=UIStatusPanel region=downloads align=right height=74 width=74 margin-right=23 }
+		region {
+			name=bottom
+			align=bottom
+			width=max
+			height=46
+		}
+		
+		place {
+			control=UIStatusPanel
+			align=bottom
+			width=max
+			height=47
+		}
+		
+		
+		place {
+			control=view_friends
+			region=bottom
+			align=right
+			dir=right
+			y=6
+			height=34			
+			margin-right=50
+		}
+		
+		place {
+			control=online_friends
+			region=bottom
+			align=right
+			dir=right
+			y=6
+			height=34
+			margin-right=50
+		}
 
 		place { control=startvr,exitvr,SupportAlert,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance_seperator,account_URL,universe_label height=0 width=0 }
 	}

@@ -1,28 +1,56 @@
-resource/layout/uistatuspanel.layout {
-
+"resource/layout/uistatuspanel.layout" {	
 	styles {
-		CUIStatusPanel {
+		StatusLabel {
+			textcolor=A2TextPrimary
+			font-family=basefont
+			font-size=18
+			font-size=19 [$OSX]
+			font-style=normal
+			inset-top=-2
 		}
-
+		
+		StatusLabelDim {
+			textcolor=A2TextSecondary
+			font-family=basefont
+			font-size=16
+			font-size=17 [$OSX]
+			font-style=normal
+		}
+		
 		SlimProgressBar {
-			textcolor=none
 			bgcolor=none
-			render {
-				0="image( x0, y0 - 78, x1, y1, graphics/material/download )"
-
-				//only shows up during active downloads
-				//!! text does not appear for workshop downloads
+			render_bg {
+				0="fill( x0 + 1, y0, x1 - 1, y1, none )"
 			}
+			render { }
 		}
-
-		StatusLabel { textcolor=none }
-		StatusLabelDim { textcolor=none }
 	}
-
+	
 	layout {
-		place { control=StatusProgressbar align=bottom width=max height=0 }
-		place { control=StatusComplete x=10 y=6 width=54 height=54 }
-
-		place { control=StatusPaused,StatusDownloading height=0 width=0 }
+		region {
+			name=statusregion
+			x=12
+			y=6
+			width=max
+			height=max
+			margin-bottom=12
+		}
+		
+		place {
+			control=StatusDownloading,StatusPaused,StatusComplete
+			region=statusregion
+			align=left
+			dir=right
+			height=max
+			margin-top=0
+		}
+		
+		place {
+			control=StatusProgressbar
+			region=statusregion
+			align=bottom
+			width=300
+			height=4
+		}
 	}
 }

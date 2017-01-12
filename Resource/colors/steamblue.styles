@@ -13,10 +13,10 @@ resource/colors/steamblue.styles {
 		Focus4="45 55 79 150"
 			//Focus3 transparent for details box
 
-		A2TextFocus="Focus"
-			//
+		A2TextFocus="96 118 168 255"
+			//+30% brightness focus
 
-		A2TextFocusHover="Focus2"
-			//
+		A2TextFocusHover="129 162 204 255"
+			//+30% brightness focus2
 	}
 }
