@@ -13,7 +13,22 @@ resource/layout/steamrootdialog.layout {
 			textcolor=none
 		}
 
-		view_friends { textcolor=none }
+		view_friends {
+			textcolor=none
+		}
+		
+		online_friends {
+			textcolor=white
+			//inset-top=2
+			
+			padding-left=20
+			padding-right=20
+			
+			//render_bg {
+			//	0="fill(x0,y0,x1,y1, Focus2)"
+			//}
+			bgcolor=A2Background
+		}
 
 		support_alert {
 			padding-left=50
@@ -99,7 +114,6 @@ resource/layout/steamrootdialog.layout {
 			place [!$OSX] { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=122 }
 			place [$OSX] { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=20 }
 			place { control=account_balance region=header align=right y=11 height=30 margin-right=24 end-right=InboxButton }
-			
 
 		place { control=UINavigatorPanel width=max height=max margin-bottom=46 }
 
@@ -114,7 +128,7 @@ resource/layout/steamrootdialog.layout {
 			control=UIStatusPanel
 			align=bottom
 			width=max
-			height=47
+			height=46
 		}
 		
 		
@@ -125,7 +139,7 @@ resource/layout/steamrootdialog.layout {
 			dir=right
 			y=6
 			height=34			
-			margin-right=50
+			margin-right=6
 		}
 		
 		place {
@@ -135,7 +149,7 @@ resource/layout/steamrootdialog.layout {
 			dir=right
 			y=6
 			height=34
-			margin-right=50
+			margin-right=6
 		}
 
 		place { control=startvr,exitvr,SupportAlert,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance_seperator,account_URL,universe_label height=0 width=0 }
