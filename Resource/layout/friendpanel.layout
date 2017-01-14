@@ -3,7 +3,11 @@ resource/layout/friendpanel.layout {
 	styles {
 		SelfPanel { }
 
-		CFriendsPanel { }
+		CFriendPanel { }
+		
+		statusStyle:hover {
+			textcolor=A2TextOnFocusHover
+		}
 
 		WebStatusStyle
 			{ image="graphics/friends/status_web" }

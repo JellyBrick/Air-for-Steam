@@ -140,15 +140,6 @@ colors.styles {
 		DragDrop.DragFrame										"255 255 255 192"
 		DragDrop.DropFrame										"150 255 150 255"
 
-		ListPanel.TextColor										"Text"
-		ListPanel.BgColor											"none"
-		ListPanel.SelectedTextColor						"TextentrySelected"
-		ListPanel.SelectedBgColor							"TextSelectedBG"
-		ListPanel.SelectedOutOfFocusBgColor		"ClientBG"
-		ListPanel.DisabledTextColor						"TextDisabled"
-		ListPanel.DisabledSelectedTextColor		"ClientBG"
-		ListPanel.EmptyListInfoTextColor			"Label"
-
 		TextEntry.IMEBGColor									"none"
 		TextEntry.IMEFGColor									"A2TextLabel"
 

@@ -59,6 +59,19 @@ steam.styles {
 		HTML.IMEAnimationTime									"0.25"
 
 		MessageBox.ButtonHeight								"24"
+		
+		ListPanel.SelectedTextColor     A2TextFocus
+		ListPanel.SelectedBgColor     TextSelectedBG
+		ListPanel.SelectedOutOfFocusBgColor   TextSelectedBG
+		ListPanel.DisabledTextColor     TextDisabled
+		ListPanel.DisabledSelectedTextColor   TextDisabled
+		
+		Friends.InGameColor       "144 186 60 255"
+		Friends.InGameHoverColor  "182 235 76 255"
+		Friends.OnlineColor		   "84 165 196 255"
+		Friends.OnlineHoverColor	"104 203 242 255"
+		Friends.OfflineColor      "127 127 127 255"
+		Friends.OfflineHoverColor "185 185 185 255"
 	}
 
 	styles {
@@ -69,6 +82,78 @@ steam.styles {
 
 		"GameItem_Uninstalled GamesGridImage" {
 			alpha		120
+		}
+		
+		GameItem_Uninstalled {
+			textcolor=TextDisabled
+			selectedtextcolor=A2TextFocus
+		}
+		GameItem_Uninstalled:hover {
+			textcolor=A2TextFocus
+		}
+		GameItem_Installed {
+			textcolor=Text
+			selectedtextcolor=A2TextFocus
+		}
+		GameItem_Installed:hover {
+			textcolor=A2TextFocus
+		}
+		GameItem_Shortcut {
+			textcolor=Text
+			selectedtextcolor=A2TextFocus
+		}
+		GameItem_Shortcut:hover {
+			textcolor=A2TextFocus
+		}
+		GameItem_Mod {
+			textcolor=Text
+			selectedtextcolor=A2TextFocus
+		}
+		GameItem_Mod:hover {
+			textcolor=A2TextFocus
+		}
+		GameItem_Updating {
+			textcolor=ClayLightGreen
+			selectedtextcolor=ClayLightGreen
+		}
+		GameItem_Updating:hover {
+			textcolor=A2TextFocus
+		}
+		GameItem_Decrypting {
+			textcolor=ClayLightGreen
+			selectedtextcolor=ClayLightGreen
+		}
+		GameItem_Decrypting:hover {
+			textcolor=A2TextFocus
+		}
+		GameItem_Syncing {
+			textcolor=ClayLightGreen
+			selectedtextcolor=ClayLightGreen
+		}
+		GameItem_Syncing:hover {
+			textcolor=A2TextFocus
+		}
+		
+		friends_offline {
+			textcolor="Friends.OfflineColor"
+		}
+		friends_offline:hover {
+			textcolor="Friends.OfflineHoverColor"
+		}
+		friends_online {
+			textcolor="Friends.OnlineColor"
+		}
+		friends_online:hover {
+			textcolor="Friends.OnlineHoverColor"
+		}
+		friends_ingame {
+			textcolor="Friends.InGameColor"
+		}
+		friends_ingame:hover {
+			textcolor="Friends.InGameHoverColor"
+		}
+		friends_ignored {
+			textcolor="Friends.IgnoredColor"
 		}
 
 		Button {
@@ -232,14 +317,38 @@ steam.styles {
 			padding-left=8
 			bgcolor=A2Ribbon
 			selectedbgcolor=A2Ribbon //games list selected game bg color
+			selectedtextcolor=A2TextFocus
 			shadowtextcolor="A2TextHint" //the color of disabled line items
 		}
+		
+		CGamesListPanel {
+			bgcolor=A2Background
+			selectedbgcolor=A2Ribbon
+			selectedtextcolor=A2TextFocus
+			shadowtextcolor=TextDisabled
+		}
+		
+		ListPanelCheckBox:selected {
+			textcolor=A2TextFocus
+		}
+		ListPanelCheckBox:disabled {
+			textcolor=TextDisabled
+		}
 
-		CheckButtonList
-			{ bgcolor=A2Ribbon }
+		CheckButtonList {
+			bgcolor=A2Ribbon
+		}
+		CheckButton:selected {}
+		CheckButton:hover {
+			textcolor=A2TextFocus
+		}
 
-		RadioButtonList
-			{ bgcolor=A2Ribbon }
+		RadioButtonList {
+			bgcolor=A2Ribbon
+		}
+		RadioButton:hover {
+			textcolor=A2TextFocus
+		}
 
 		"CDialogSettings ListPanel"
 			{ bgcolor=none }
@@ -271,7 +380,7 @@ steam.styles {
 		"CAddShortcutDialog ListPanel"
 			{ bgcolor=none }
 
-		ListPanelInterior { }
+		ListPanelInterior {}
 
 		ListPanelColumnheader {
 			minimum-height=0 //reset for button height
@@ -400,6 +509,9 @@ steam.styles {
 		ListPanelSectionHeader {
 			padding-left=5
 			padding-bottom=2
+		}
+		ListPanelSectionHeader:hover {
+			textcolor=A2TextFocus
 		}
 
 		"CSteamRootDialog ListPanelSectionHeader" {
@@ -668,6 +780,7 @@ steam.styles {
 		SectionedListPanel {
 			bgcolor=none
 			selectedbgcolor=Focus
+			selectedtextcolor=A2TextFocus
 			render_bg { }
 			inset="0 0 0 0"
 		}
