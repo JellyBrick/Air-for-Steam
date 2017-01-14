@@ -20,6 +20,11 @@
 
 	layout {
 	
-		place { control="GamesList" width=max height=max }
+		place {
+			control="GamesList"
+			y=35
+			width=max
+			height=max
+		}
 	}
 }

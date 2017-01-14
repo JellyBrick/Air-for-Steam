@@ -681,8 +681,8 @@ fonts.styles {
 	"CTwoFactorCodeChallenge AuthCode"
 		{ font-size=40 }
 
-	emptylisttext
-		{ textcolor=none selectedtextcolor=none }
+	//emptylisttext
+		//{ textcolor=none selectedtextcolor=none }
 		//search results empty
 
 	TreeNodeText

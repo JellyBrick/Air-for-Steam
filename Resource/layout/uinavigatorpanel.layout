@@ -30,6 +30,9 @@
 			padding-left=5
 			padding-right=5
 		}
+		CUINavButton:hover {
+			textcolor=white
+		}
 
 		CUINavigatorPanel {
 			bgcolor=none
@@ -48,10 +51,6 @@
 			textcolor=html.insecureurl
 		}
 
-		LibrarySearch {
-			minimum-width=180
-		}
-
 		MusicPlayerIcon {
 			image="graphics/active/music/player"
 		}
@@ -59,6 +58,12 @@
 		NavLabel2 {
 			image=graphics/onfocus/add
 			//music page list panel collapser icon (overriden below for game filter button)
+		}
+		
+		LibrarySearch {
+			minimum-width=262
+			minimum-height=35
+			bgcolor=A2Background
 		}
 
 		//CGameFilterMenuButton {
@@ -128,12 +133,19 @@
 		
 		place {
 			region=nav
-			control=label_store,label_library,label_community,label_me,library_search
+			control=label_store,label_library,label_community,label_me
+			//,library_search
 			start=forward
 			x=10
 			height=50
 			spacing=10
 		}
+		
+		place {
+			control=library_search
+			region=subnav
+		}
+		
 		place {
 			control=library_filters
 			region=nav
@@ -175,8 +187,14 @@
 		place { control=GamesPage_Details
 			width=max height=max start=phonereminderbar dir=down }
 
-		place { control=GamesPage_List
-			width=max height=max start=phonereminderbar dir=down y=9 }
+		place {
+			control=GamesPage_List
+			width=max
+			height=max
+			start=phonereminderbar
+			dir=down
+			y=9
+		}
 
 		place { control=GamesPage_Grid
 			width=max height=max start=phonereminderbar dir=down y=30 margin-bottom=-2 }

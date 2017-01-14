@@ -780,7 +780,7 @@ steam.styles {
 			{ render_bg { } image=graphics/onfocus/web/back }
 
 		LibrarySearch {
-			minimum-height=30 //reset for text entry height
+			//minimum-height=30 //reset for text entry height
 			inset-left=3 //reset for text entry inset
 			render_bg { }
 		}

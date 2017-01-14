@@ -18,15 +18,11 @@ resource/layout/steamrootdialog.layout {
 		}
 		
 		online_friends {
-			textcolor=white
-			//inset-top=2
+			textcolor=A2TextPrimary
 			
 			padding-left=20
 			padding-right=20
 			
-			//render_bg {
-			//	0="fill(x0,y0,x1,y1, Focus2)"
-			//}
 			bgcolor=A2Background
 		}
 
