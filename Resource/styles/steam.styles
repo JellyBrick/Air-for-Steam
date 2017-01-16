@@ -214,6 +214,19 @@ steam.styles {
 			}
 		}
 
+		ToggleButton {
+			render_bg {
+				0="fill( x0, y0, x0 + 1, y1, A2ButtonActive )"
+				1="fill( x1 - 1, y0, x1, y1, A2ButtonActive )"
+				2="fill( x0, y0, x1, y0 + 1, A2ButtonActive )"
+				3="fill( x0, y1 - 1, x1, y1, A2ButtonActive )"
+			}
+		}
+		
+		ToggleButton:hover {
+			bgcolor=A2ButtonHover
+		}
+		
 		ToggleButton:selected {
 			render_bg {
 				0="fill( x0, y0, x1, y1, A2ButtonActive )"

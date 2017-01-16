@@ -66,48 +66,9 @@
 			bgcolor=A2Background
 		}
 
-		//CGameFilterMenuButton {
-		//	render {
-		//		0="fill( x0, y0, x1, y1, focus )"
-		//		0="image( x0, y0 + 8, x1, y1, graphics/onfocus/caret_down_onfocus )"
-		//	}
-		//}
 	}
 
 	layout {
-		//region [!$OSX] { name=nav height=50 width=max x=61 }
-		//region [$OSX] { name=nav height=50 width=max x=101 }
-		//region { name=body height=max width=max y=50 }
-		
-		//place {
-		//	control=label_store,label_library
-		//	region=nav start=forward height=44 spacing=16 x=10 margin-top=-7
-		//}
-
-		//place {
-		//	control=library_filters
-		//	region=nav start=label_library height=30 width=15 x=0 y=7
-		//}
-
-		//place {
-		//	control=label_community,label_me
-		//	region=nav
-		//	start=library_filters
-		//	height=44
-		//	spacing=16
-		//	x=10
-		//	y=0
-		//	margin-top=-7
-		//}
-		
-		//place {
-		//	region=nav
-		//	control=library_search
-		//	start=label_me
-		//	height=22
-		//	x=15
-		//	y=7
-		//}
 		
 		region {
 			name=nav
@@ -134,7 +95,6 @@
 		place {
 			region=nav
 			control=label_store,label_library,label_community,label_me
-			//,library_search
 			start=forward
 			x=10
 			height=50
@@ -150,8 +110,6 @@
 			control=library_filters
 			region=nav
 			start=label_library
-			//height=30
-			//width=15
 			height=0
 			width=0
 			y=10

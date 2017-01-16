@@ -6,13 +6,11 @@ resource/layout/steamrootdialog_gamespage_details.layout {
 		}
 
 		CGamesListPanel {
-			render_bg {
-				0="fill( x0, y0, x1 - 13, y1, A2Background )"
-				1="fill( x1 - 13, y0, x1, y1, A2Ribbon )"
-			}
+			bgcolor=none
 		}
 
 		"CGamesListPanel ListPanelInterior" {
+			bgcolor=A2Background
 			minimum-width="262"
 		}
 
