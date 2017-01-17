@@ -3,11 +3,40 @@ resource/layout/downloadsummarypanel.layout {
 	styles {
 		CDownloadSummaryPanel { render_bg { } }
 
-		NetGraphPanel { textcolor=AL40 bgcolor=none inset="0 0 0 0" }
-		NetLegendPanel { bgcolor=AL40 }
+		//NetGraphPanel { textcolor=AL40 bgcolor=none inset="0 0 0 0" }
+		//NetLegendPanel { bgcolor=AL40 }
 
-		DiscGraphPanel { textcolor=Focus2 bgcolor=none inset="0 0 0 0" }
-		DiskLegendPanel { bgcolor=Focus2 }
+		//DiscGraphPanel { textcolor=Focus2 bgcolor=none inset="0 0 0 0" }
+		//DiskLegendPanel { bgcolor=Focus2 }
+		NetGraphPanel
+		{
+			bgcolor   "none"	
+			textcolor "highlight5"
+		}
+		
+		DiscGraphPanel
+		{
+			bgcolor   "none"	
+			textcolor="ClayLightGreen"
+		}
+		
+		DiskLegendPanel
+		{
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1,y1, ClayLightGreen )"
+			}
+		}
+		
+		NetLegendPanel
+		{
+			render_bg
+			{
+				// background fill
+				0="fill( x0, y0, x1,y1, highlight5 )"
+			}
+		}
 	}
 
 	layout {
