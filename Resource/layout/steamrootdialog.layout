@@ -36,34 +36,34 @@ resource/layout/steamrootdialog.layout {
 			render_bg { }
 		}
 
-		inbox_button {
-			textcolor=none
-			render_bg {
-				0="image( x0 + 9, y0 + 8, x1, y1, graphics/onfocus/inbox )"
-			}
-		}
+    inbox_button {
+      textcolor=none
+      render_bg {
+        0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox )"
+      }
+    }
 
-		inbox_button:selected {
-			textcolor=none
-			render_bg {
-				0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
-				1="image( x0 + 9, y0 + 8, x1, y1, graphics/onfocus/inbox )"
-			}
-		}
+    inbox_button:selected {
+      textcolor=none
+      render_bg {
+        0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
+        1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox )"
+      }
+    }
 
-		inbox_button_active {
-			textcolor=none
-			render_bg {
-				0="image( x0 + 9, y0 + 8, x1, y1, graphics/onfocus/inbox_active )"
-			}
-		}
+    inbox_button_active {
+      textcolor=none
+      render_bg {
+        0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active )"
+      }
+    }
 
-		inbox_button_active:selected {
-			render_bg {
-				0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
-				1="image( x0 + 9, y0 + 8, x1, y1, graphics/onfocus/inbox_active )"
-			}
-		}
+    inbox_button_active:selected {
+      render_bg {
+        0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
+        1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active )"
+      }
+    }
 
 		parental_lock_button {
 			image=graphics/none
