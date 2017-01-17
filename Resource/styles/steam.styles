@@ -113,21 +113,21 @@ steam.styles {
 			textcolor=A2TextFocus
 		}
 		GameItem_Updating {
-			textcolor=ClayLightGreen
-			selectedtextcolor=ClayLightGreen
+			textcolor="86 171 76 255"
+			selectedtextcolor=A2TextFocus
 		}
 		GameItem_Updating:hover {
 			textcolor=A2TextFocus
 		}
 		GameItem_Decrypting {
-			textcolor=ClayLightGreen
-			selectedtextcolor=ClayLightGreen
+			textcolor="86 171 76 255"
+			selectedtextcolor=A2TextFocus
 		}
 		GameItem_Decrypting:hover {
 			textcolor=A2TextFocus
 		}
 		GameItem_Syncing {
-			textcolor=ClayLightGreen
+			textcolor="86 171 76 255"
 			selectedtextcolor=ClayLightGreen
 		}
 		GameItem_Syncing:hover {

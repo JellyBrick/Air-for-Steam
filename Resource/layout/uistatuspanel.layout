@@ -49,9 +49,9 @@
 		
 		place {
 			control=StatusProgressbar
-			region=statusregion
+			x=0
 			align=bottom
-			width=300
+			width=262
 			height=4
 		}
 	}
