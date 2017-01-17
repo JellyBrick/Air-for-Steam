@@ -128,7 +128,7 @@ steam.styles {
 		}
 		GameItem_Syncing {
 			textcolor="86 171 76 255"
-			selectedtextcolor=ClayLightGreen
+			selectedtextcolor=A2TextFocus
 		}
 		GameItem_Syncing:hover {
 			textcolor=A2TextFocus
