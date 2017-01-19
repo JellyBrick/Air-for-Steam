@@ -86,52 +86,52 @@ steam.styles {
 		
 		GameItem_Uninstalled {
 			textcolor=TextDisabled
-			selectedtextcolor=A2TextFocus
+			selectedtextcolor=AccentColor
 		}
 		GameItem_Uninstalled:hover {
-			textcolor=A2TextFocus
+			textcolor=AccentColor
 		}
 		GameItem_Installed {
 			textcolor=Text
-			selectedtextcolor=A2TextFocus
+			selectedtextcolor=AccentColor
 		}
 		GameItem_Installed:hover {
-			textcolor=A2TextFocus
+			textcolor=AccentColor
 		}
 		GameItem_Shortcut {
 			textcolor=Text
-			selectedtextcolor=A2TextFocus
+			selectedtextcolor=AccentColor
 		}
 		GameItem_Shortcut:hover {
-			textcolor=A2TextFocus
+			textcolor=AccentColor
 		}
 		GameItem_Mod {
 			textcolor=Text
-			selectedtextcolor=A2TextFocus
+			selectedtextcolor=AccentColor
 		}
 		GameItem_Mod:hover {
-			textcolor=A2TextFocus
+			textcolor=AccentColor
 		}
 		GameItem_Updating {
 			textcolor="86 171 76 255"
-			selectedtextcolor=A2TextFocus
+			selectedtextcolor=AccentColor
 		}
 		GameItem_Updating:hover {
-			textcolor=A2TextFocus
+			textcolor=AccentColor
 		}
 		GameItem_Decrypting {
 			textcolor="86 171 76 255"
-			selectedtextcolor=A2TextFocus
+			selectedtextcolor=AccentColor
 		}
 		GameItem_Decrypting:hover {
-			textcolor=A2TextFocus
+			textcolor=AccentColor
 		}
 		GameItem_Syncing {
 			textcolor="86 171 76 255"
-			selectedtextcolor=A2TextFocus
+			selectedtextcolor=AccentColor
 		}
 		GameItem_Syncing:hover {
-			textcolor=A2TextFocus
+			textcolor=AccentColor
 		}
 		
 		friends_offline {

@@ -2,7 +2,7 @@ resource/layout/steamrootdialog_gamespage_details.layout {
 
 	styles {
 		CGamesPage_Details {
-			bgcolor=A2Ribbon
+			bgcolor=A2Background
 		}
 
 		CGamesListPanel {
@@ -56,6 +56,11 @@ resource/layout/steamrootdialog_gamespage_details.layout {
 				y=499
 				dir=down
 				width=max
+				spacing=10
+				margin-left=10
+				margin-right=10
+				margin-top=10
+				margin-bottom=10
 			}
 			
 			place {

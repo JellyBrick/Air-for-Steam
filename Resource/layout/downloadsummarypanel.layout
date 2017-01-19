@@ -41,8 +41,18 @@ resource/layout/downloadsummarypanel.layout {
 
 	layout {
 		region { name=box height=max width=max margin-left=26 margin-right=26 y=16 }
+		
 		region { name=graph y=50 height=80 width=max }
 
+		// "table"
+		//region { name=legend_column region=box y=7 x=15 }
+		//region { name=value_column region=box y=7 x=90 }
+		//
+		// "table"
+		//place { region=legend_column control=download_rate,peak_download_rate,total_downloaded dir=down spacing=3 }
+		//place { region=value_column control=download_rate_value,peak_download_rate_value,total_downloaded_value dir=down spacing=3 }
+		//
+		
 		place { control=net_graphpanel region=graph width=max height=max }
 		place { control=disc_graphpanel region=graph width=max height=max }
 

@@ -16,6 +16,8 @@ colors.styles {
 		darkred																"128 0 0 255"
 		darkpurple														"64 0 64 255"
 
+		AccentColor													"A2AccentColor" 
+		  
 		bordercolor														"133 130 113 255"
 		darkcorner														"77 73 71 255"
 		buttontext														"Text"
