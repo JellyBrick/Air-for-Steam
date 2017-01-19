@@ -41,10 +41,6 @@ extradark.styles {
 		A2TextOverlayLabel			"Air155"							//overlay label text color
 		A2TextOverlayLabelHover	"Air200"							//hover
 
-		//A2FriendsOnline					"103 161 184 255"			//friend online text
-		//A2FriendsInGame					"117 165 112 255"			//friend in-game text
-		//A2FriendsOffline				"A2TextLabel"					//friend offline text
-
 		A2ChatFriend						"A2TextPrimary"				//chat window friend text
 		A2ChatSelf							"A2TextSecondary"			//chat window self text
 		A2ChatHistory						"A2TextLabel"					//chat window history text

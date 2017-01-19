@@ -179,10 +179,10 @@ fonts.styles {
 		{ font-style=underline }
 
 	friends_chat_name_ingame
-		{ textcolor=A2FriendsInGame }
+		{ textcolor=Friends.InGameColor }
 
 	friends_chat_name
-		{ textcolor=A2FriendsOnline }
+		{ textcolor=Friends.OnlineColor }
 
 //friends_chat_event { }
 //friends_chat_self { }
