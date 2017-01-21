@@ -126,6 +126,13 @@ steam.styles {
 		GameItem_Syncing:hover {
 			textcolor=AccentColor
 		}
+		GameItem_Running {
+			textcolor="86 171 76 255"
+			selectedtextcolor=AccentColor
+		}
+		GameItem_Running:hover {
+			textcolor=AccentColor
+		}
 		
 		friends_offline {
 			textcolor="Friends.OfflineColor"
