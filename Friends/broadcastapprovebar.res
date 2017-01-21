@@ -3,8 +3,10 @@
 	styles {
 		CBroadcastApproveBar {
 			render_bg {
-				0="fill( x0, y0, x1, y1, A2Bar )"
+				0="fill( x0, y1-1, x1, y1, AccentColor)"
 			}
+			bgcolor=Focus3
+			textcolor="A2TextFocus"
 		}
 
 		Button {
@@ -20,7 +22,14 @@
 			}
 		}
 
-		Label { font-family=medium font-size=16 font-weight=500 textcolor=A2TextNotification font-style=regular }
+		Label {
+			font-family=medium
+			font-size=16
+			font-weight=500
+			//textcolor=A2TextNotification
+			textcolor=A2TextFocus
+			font-style=regular
+		}
 		URLLabel { font-family=medium font-size=16 font-weight=500 textcolor=A2TextNotification font-style=regular }
 	}
 

@@ -6,11 +6,11 @@ extradark.styles {
 		A2Background						"Air25"								//client bg
 		A2Ribbon								"Air40"								//bg for section emphasis (ie. left side of settings dialog)
 		A2Divider								"Air65"								//client dividers
-		A2Snackbar							"Air60"								//bg for download notification
+		A2Snackbar							"Air40"								//bg for download notification
 		A2Notification					"A2Snackbar"					//bg for steam popup notifications
-		A2Bar										"Air60"								//bg for greater section emphasis (ie. voice chat and trade notifications)
+		A2Bar										"32 32 32 255"								//bg for greater section emphasis (ie. voice chat and trade notifications)
 		A2Menu									"A2Bar"								//menu bg
-		A2MenuDivider						"Air80"								//menu dividers
+		A2MenuDivider						"Air50"								//menu dividers
 
 		A2ButtonHover						"155 155 155 50"			//button bg on hover
 		A2ButtonActive					"155 155 155 100"			//button bg on click
