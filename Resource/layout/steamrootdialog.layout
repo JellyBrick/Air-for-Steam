@@ -22,8 +22,7 @@ resource/layout/steamrootdialog.layout {
 			
 			padding-left=20
 			padding-right=20
-			
-			bgcolor=A2Background
+			bgcolor=none
 		}
 
 		support_alert {
