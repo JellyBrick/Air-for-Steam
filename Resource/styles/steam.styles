@@ -232,6 +232,24 @@ steam.styles {
       }
     }
 
+    "CSubPanelOptionsFamily URLLabel" {
+      padding-left=10 padding-right=10
+      minimum-height=30
+      render_bg { }
+    }
+
+    "CSubPanelOptionsFamily URLLabel:hover" {
+      render_bg {
+        0="fill( x0, y0, x1, y1, A2ButtonHover )"
+      }
+    }
+
+    "CSubPanelOptionsFamily URLLabel:active" {
+      render_bg {
+        0="fill( x0, y0, x1, y1, A2ButtonActive )"
+      }
+    }
+
     ToggleButton:selected {
       render_bg {
         0="fill( x0, y0, x1, y1, A2ButtonActive )"
