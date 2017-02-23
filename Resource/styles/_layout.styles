@@ -334,8 +334,8 @@ layout.styles {
 		CTwoFactorCodeChallenge
 			{ minimum-width=400 minimum-height=270 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
 
-		CJoinGameDialog
-			{ minimum-width=400 minimum-height=250 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
+    CJoinGameDialog
+      { minimum-width=400 minimum-height=270 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
 
 		CLimitedUserDialog
 			{ minimum-width=400 minimum-height=140 render_bg { 0="fill( x0, y1 - 50, x1, y1, A2Ribbon )" } }
