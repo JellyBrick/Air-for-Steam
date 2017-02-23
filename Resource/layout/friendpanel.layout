@@ -4,9 +4,12 @@ resource/layout/friendpanel.layout {
 		SelfPanel { }
 
 		CFriendPanel { }
-		
+
 		statusStyle:hover {
 			textcolor=A2TextOnFocusHover
+		}
+		nameInstanceStyle {
+			textcolor=A2TextSecondary
 		}
 
 		WebStatusStyle
