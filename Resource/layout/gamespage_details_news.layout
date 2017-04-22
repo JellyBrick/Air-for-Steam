@@ -11,7 +11,7 @@
 			bgcolor=none
 			render_bg {
 				0="fill( x0, y0, x1, y0 + 1, AccentColor )"
-				1="fill( x0, y0 + 1, x1, y1, A2Ribbon )"
+				1="fill( x0, y0 + 1, x1, y1, Focus )"
 			}
 		}
 	}

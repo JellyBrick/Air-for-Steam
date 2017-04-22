@@ -1,6 +1,7 @@
 resource/layout/steamrootdialog.layout {
 
 	styles {
+
 		RootMenu {
 			bgcolor=none
 		}
@@ -16,10 +17,10 @@ resource/layout/steamrootdialog.layout {
 		view_friends {
 			textcolor=none
 		}
-		
+
 		online_friends {
 			textcolor=A2TextPrimary
-			
+
 			padding-left=20
 			padding-right=20
 			bgcolor=none
@@ -35,34 +36,34 @@ resource/layout/steamrootdialog.layout {
 			render_bg { }
 		}
 
-    inbox_button {
-      textcolor=none
-      render_bg {
-        0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox )"
-      }
-    }
+	    inbox_button {
+	      textcolor=none
+	      render_bg {
+	        0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox )"
+	      }
+	    }
 
-    inbox_button:selected {
-      textcolor=none
-      render_bg {
-        0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
-        1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox )"
-      }
-    }
+	    inbox_button:selected {
+	      textcolor=none
+	      render_bg {
+	        0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
+	        1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox )"
+	      }
+	    }
 
-    inbox_button_active {
-      textcolor=none
-      render_bg {
-        0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active )"
-      }
-    }
+	    inbox_button_active {
+	      textcolor=none
+	      render_bg {
+	        0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active )"
+	      }
+	    }
 
-    inbox_button_active:selected {
-      render_bg {
-        0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
-        1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active )"
-      }
-    }
+	    inbox_button_active:selected {
+	      render_bg {
+	        0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
+	        1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active )"
+	      }
+	    }
 
 		parental_lock_button {
 			image=graphics/none
@@ -118,25 +119,25 @@ resource/layout/steamrootdialog.layout {
 			width=max
 			height=46
 		}
-		
+
 		place {
 			control=UIStatusPanel
 			align=bottom
 			width=max
 			height=46
 		}
-		
-		
+
+
 		place {
 			control=view_friends
 			region=bottom
 			align=right
 			dir=right
 			y=6
-			height=34			
+			height=34
 			margin-right=6
 		}
-		
+
 		place {
 			control=online_friends
 			region=bottom
