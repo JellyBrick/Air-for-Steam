@@ -15,7 +15,7 @@ extradark.styles {
 		A2ButtonHover						"155 155 155 50"			//button bg on hover
 		A2ButtonActive					"155 155 155 100"			//button bg on click
 		A2DetailsButton					"0 0 0 100"						//details install/play button
-		A2DetailsButtonHover		"0 0 0 200"						//details install/play button hover
+		A2DetailsButtonHover		"0 0 0 165"						//details install/play button hover
 
 		A2Scroll								"Air80"								//scrollbar handle
 		A2ScrollHover						"Air95"								//scrollbar handle on hover
