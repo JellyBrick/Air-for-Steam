@@ -59,7 +59,7 @@ steam.styles {
 		HTML.IMEAnimationTime									"0.25"
 
 		MessageBox.ButtonHeight								"24"
-		
+
 		ListPanel.SelectedTextColor     A2TextFocus
 		ListPanel.SelectedBgColor     TextSelectedBG
 		ListPanel.SelectedOutOfFocusBgColor   TextSelectedBG
@@ -76,7 +76,7 @@ steam.styles {
 		"GameItem_Uninstalled GamesGridImage" {
 			alpha		120
 		}
-		
+
 		GameItem_Uninstalled {
 			textcolor=TextDisabled
 			selectedtextcolor=AccentColor
@@ -133,7 +133,7 @@ steam.styles {
 		GameItem_Running:hover {
 			textcolor=AccentColor
 		}
-		
+
 		friends_offline {
 			textcolor="Friends.OfflineColor"
 		}
@@ -356,14 +356,14 @@ steam.styles {
 			selectedtextcolor=A2TextFocus
 			shadowtextcolor="A2TextHint" //the color of disabled line items
 		}
-		
+
 		CGamesListPanel {
 			bgcolor=A2Background
 			selectedbgcolor=A2Ribbon
 			selectedtextcolor=A2TextFocus
 			shadowtextcolor=TextDisabled
 		}
-		
+
 		ListPanelCheckBox:selected {
 			textcolor=A2TextFocus
 		}
@@ -924,9 +924,6 @@ steam.styles {
 		}
 
 		WrapPanel { }
-
-		"CSteamRootDialog BackButton:hover"
-			{ render_bg { } image=graphics/onfocus/web/back }
 
 		LibrarySearch {
 			//minimum-height=30 //reset for text entry height
