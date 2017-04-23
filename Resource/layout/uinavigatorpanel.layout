@@ -72,7 +72,7 @@
 
 		region {
 			name=nav
-			x=61
+			x=51
 			height=50
 		}
 
