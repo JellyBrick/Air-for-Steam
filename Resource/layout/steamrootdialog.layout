@@ -104,7 +104,7 @@ resource/layout/steamrootdialog.layout {
 			place [$OSX] { control=frame_close,frame_minimize,frame_maximize height=22 width=22 y=13 align=left margin-left=20 }
 			place { control=frame_captiongrip margin=2 width=max height=50 }
 
-			place [!$OSX] { control=MenuBar align=top width=52 height=49 }
+			place [!$OSX] { control=MenuBar align=top width=45 height=49 }
 
 			place { control=ParentalLockButton region=header align=right height=30 width=30 align=right }
 			place [!$OSX] { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=122 }

@@ -34,7 +34,7 @@ Friends/FriendsDialog.res {
 			place [$OSX] { control=frame_close,frame_minimize height=22 width=22 y=13 align=left margin-left=20 }
 			place { control=frame_captiongrip margin=2 width=max height=50 }
 
-			place [!$OSX] { control=MenuBar region=header align=top width=52 height=49 margin-left=-10 }
+			place [!$OSX] { control=MenuBar region=header align=top width=45 height=49 }
 			place [!$OSX] { control=friends_search region=header y=9 x=56 height=22 width=92 }
 			place [$OSX] { control=friends_search region=header y=9 x=73 height=22 width=92 }
 

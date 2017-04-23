@@ -20,7 +20,7 @@
 			selectedbgcolor=Focus2
 			textcolor=A2TextPrimary
 			selectedtextcolor=A2TextSelected
-			
+
 			bgcolor=none
 			render {}
 			render_bg {}
@@ -59,7 +59,7 @@
 			image=graphics/onfocus/add
 			//music page list panel collapser icon (overriden below for game filter button)
 		}
-		
+
 		LibrarySearch {
 			minimum-width=262
 			minimum-height=35
@@ -69,21 +69,21 @@
 	}
 
 	layout {
-		
+
 		region {
 			name=nav
 			x=61
 			height=50
 		}
 
-		
+
 		region {
 			name=subnav
 			y=50
 			width=max
 			height=35
 		}
-		
+
 		place {
 			region=nav
 			control=back,forward
@@ -91,7 +91,7 @@
 			width=28
 			spacing=4
 		}
-		
+
 		place {
 			region=nav
 			control=label_store,label_library,label_community,label_me
@@ -100,12 +100,12 @@
 			height=50
 			spacing=10
 		}
-		
+
 		place {
 			control=library_search
 			region=subnav
 		}
-		
+
 		place {
 			control=library_filters
 			region=nav
@@ -115,7 +115,7 @@
 			y=10
 		}
 
-		place [!$OSX] { control=PageLoadThrobber y=18 x=26 height=14 width=18 }
+		place [!$OSX] { control=PageLoadThrobber y=18 x=16 height=14 width=18 }
 
 		place { control=library_zoom y=61 height=8 width=max margin-right=26 margin-left=26 }
 		place { control=library_music_menu align=left x=256 y=49 height=21 width=20 }
@@ -186,15 +186,15 @@
 			height=0
 			width=0
 		}
-		
+
 		place {
 			control=refresh,stop
 			region=subnav
 			align=left
-			x=16
+			x=12
 			width=24
 			height=max
-			margin-right=10			
+			margin-right=10
 		}
 		place {
 			control=EVCert,URLBar
@@ -206,7 +206,7 @@
 			spacing=0
 			x=10
 		}
-		
+
 		place [$OSX] { control=PageLoadThrobber height=0 width=0 }
 	}
 }
