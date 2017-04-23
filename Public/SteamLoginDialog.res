@@ -1,8 +1,9 @@
 "Public/SteamLoginDialog.res"
 {
+	
 	styles {
 		CSteamLoginDialog {
-			minimum-height=430
+			minimum-height=400
 			bgcolor=A2Background
 		}
 
@@ -10,24 +11,37 @@
 			textcolor=none
 			selectedtextcolor=none
 		}
+		loginerror_style_body {
+			textcolor=A2TextPrimary
+			selectedtextcolor=A2TextPrimary
+		}
 	}
 
 	layout {
 		region { name=header height=50 width=max }
-			place { control=frame_close height=22 width=22 y=13 align=right margin-right=20 }
-			place { control=frame_captiongrip margin=2 width=max height=50 }
+		
+		place { control=frame_minimize,frame_close dir=right height=22 width=22 y=13 align=right margin-right=20 }
+		place { control=frame_captiongrip margin=2 width=max height=50 }
 
-		place { control=UserNameEdit,PasswordEdit 							align=top-center dir=down width=240 y=100 spacing=10 }
+		place { control=UserNameEdit,PasswordEdit 							align=top-center dir=down width=240 y=70 spacing=10 }
 		place { control=PasswordCapsLockImage										start=PasswordEdit dir=right x=-27 Y=4 }
 		place { control=SavePasswordCheck start=PasswordEdit 		align=top-center dir=down y=20 }
 
-		place { control=LoginButton,CancelButton align=top-center spacing=10 y=240 }
+		place { control=LoginButton,CancelButton start=SavePasswordCheck align=top-center spacing=10 y=30 }
 
-		place { control=Divider1 width=max y=300 margin-right=26 margin-left=26 }
+		place {
+			control=LoginErrorText
+			start=CancelButton
+			dir=down
+			align=top-center
+			y=10
+		}
+		
+		place { control=Divider1 start=LoginErrorText align=top-center dir=down width=max y=30 margin-right=26 margin-left=26 }
+		
+		place { control=CreateNewAccountButton,LostPasswordButton start=Divider1 align=top-center dir=down y=30 }
 
-		place { control=CreateNewAccountButton,LostPasswordButton align=top-center dir=down y=330 }
-
-		place { control=frame_minimize,ImagePanelLogo,Label2,Label3,Label4 height=0 width=0 margin-left=-9999 }
+		place { control=UserNameLabel,PasswordLabel,PasswordCapsLockLabel,ImagePanelLogo,Label2,Label3,Label4 height=0 width=0 margin-left=-9999 }
 	}
 }
 
