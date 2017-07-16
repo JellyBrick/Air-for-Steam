@@ -633,8 +633,8 @@ steam.styles {
 		}
 
 		"CSteamRootDialog SectionedListPanelInterior" {
-			bgcolor=A2Ribbon
-			//downloads page background
+			bgcolor=A2Background
+			minimum-width="262"
 		}
 
 		MainNav { }

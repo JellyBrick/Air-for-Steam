@@ -18,10 +18,11 @@
 
 		SlimProgressBar {
 			bgcolor=none
+			render {}
+			textcolor="AccentColor"
 			render_bg {
-				0="fill(x0 + 1, y0, x1 - 1, y1, AccentColor)"
+				0="fill(x0, y0, x1, y1, A2Ribbon)"
 			}
-			render { }
 		}
 
 		Panel {
