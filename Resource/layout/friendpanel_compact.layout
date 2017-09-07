@@ -1,6 +1,9 @@
 resource/layout/friendpanel_compact.layout {
 
 	styles {
+		nameInstanceStyle {
+	 		textcolor=A2TextSecondary
+	 	}
 	}
 
 	layout {
