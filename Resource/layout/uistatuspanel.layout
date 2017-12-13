@@ -56,7 +56,7 @@
 			control=StatusProgressbar
 			x=0
 			align=bottom
-			width=262
+			width=max
 			height=4
 		}
 	}
