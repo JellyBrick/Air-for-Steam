@@ -5,12 +5,15 @@ resource/layout/musicpage_detail_content.layout {
 			render_bg { }
 		}
 
+		CMusicPage_Details {
+			bgcolor=A2Background
+		}
+
 		EmptyDatabaseText { }
 
 		CrawlingText { }
 
 		CMusicPage_Details_Content {
-			bgcolor=A2Ribbon
 			render_bg { }
 		}
 
@@ -27,7 +30,7 @@ resource/layout/musicpage_detail_content.layout {
 	}
 
 	layout {
-		region	{ name=list y=0 x=0 width=275 height=max }
+		region	{ name=list y=35 x=0 width=275 height=max }
 		region	{ name=details y=0 x=275 width=max height=max overflow=scroll-vertical }
 		region	{ name=headertext y=40 region=details width=max height=max }
 		region	{ name=detailsbody y=399 region=details width=max overflow=allow-vertical }

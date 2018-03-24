@@ -17,23 +17,23 @@ resource/layout/steamrootdialog_gamespage_details.layout {
 		headerimage {
 			bgcolor=none
 		}
-		
+
 		emptylisttext {
 			bgcolor=A2Background
 		}
-		
+
 	}
 
 	layout {
 		place { control=DetailsBorder width=max height=max }
-		
+
 		region {
 			y=35
 			name=list
 			width=275
 			height=max
 			dir=down
-			
+
 		}
 			place {
 				region=list
@@ -62,7 +62,7 @@ resource/layout/steamrootdialog_gamespage_details.layout {
 				margin-top=10
 				margin-bottom=10
 			}
-			
+
 			place {
 				control=emptylisttext
 				y=35
