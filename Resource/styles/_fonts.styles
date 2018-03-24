@@ -1,16 +1,9 @@
 fonts.styles {
 
-	colors [$WINDOWS||$LINUX] {
+	colors [$WINDOWS||$LINUX||$OSX] {
 		basefont		"Roboto"
 		condensed		"Roboto Condensed"
 		medium			"Roboto Medium"
-	}
-
-	colors [$OSX] {
-		basefont		"Roboto"
-		condensed		"Roboto Condensed"
-		medium			"Roboto Medium"
-
 		//change values to "Roboto Regular" and "Roboto Condensed Regular" if fonts are not loading
 	}
 
