@@ -13,12 +13,15 @@
 			y=5
 		}
 
+		place { control=TranslationLabel			dir=down width=max start=LanguageCombo y=5 }
+		place { control=Divider1				dir=down width=max start=TranslationLabel y=10 }
 		place {
 			control=Label1
 			dir=down
-			start=LanguageCombo
+			start=Divider1
 			y=20
 		}
+
 		place {
 			control=FavoriteWindowCombo
 			dir=down
@@ -27,10 +30,12 @@
 			y=5
 		}
 
+		place { control=Divider3				dir=down width=max start=FavoriteWindowCombo y=10 }
+
 		place {
 			control=Label3
 			dir=down
-			start=FavoriteWindowCombo
+			start=Divider3
 			y=20
 		}
 		place {
@@ -42,15 +47,36 @@
 		}
 
 		place {
-			control=AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,DWriteCheck,H264HWAccelCheck
-			dir=down start=SkinCombo y=20
+			control=DPIScalingCheck,AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,DWriteCheck,H264HWAccelCheck
+			dir=down start=SkinCombo y=10
 		}
 
-		place [$LINUX||$OSX] { control=NotifyAvailableGamesCheck		dir=down start=UrlBarCheck y=4 }
-		place [$WINDOWS] { control=NotifyAvailableGamesCheck		dir=down start=H264HWAccelCheck y=4 }
+		place [$LINUX||$OSX] {
+			control=Divider2
+			width=max
+			dir=down
+			start=UrlBarCheck
+			y=10
+		}
+		place [$WINDOWS] {
+			control=Divider2
+			width=max
+			dir=down
+			start=H264HWAccelCheck
+			y=10
+		}
 
-		place { control=SetJumpListOptionsButton		dir=down start=NotifyAvailableGamesCheck y=10 }
-
-		place { control=Divider2,Divider1,TranslationLabel height=0 width=0 }
+		place {
+			control=NotifyAvailableGamesCheck
+			dir=down
+			start=Divider2
+			y=10
+		}
+		place {
+			control=SetJumpListOptionsButton
+			dir=down
+			start=NotifyAvailableGamesCheck
+			y=10
+		}
 	}
 }
