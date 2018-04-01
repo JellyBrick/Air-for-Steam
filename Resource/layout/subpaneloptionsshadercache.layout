@@ -1,0 +1,8 @@
+resource/layout/subpaneloptionsshadercache.layout {
+
+	layout
+	{
+		place { control=ShaderCacheInfo width=max }
+		place { controls=ShaderCacheEnabledCheckbox	dir=down width=max start=ShaderCacheInfo y=20 }
+	}
+}
