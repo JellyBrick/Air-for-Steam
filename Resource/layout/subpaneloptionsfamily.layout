@@ -1,17 +1,25 @@
 resource/layout/subpaneloptionsfamily.layout {
+	styles {
+		highlight {
+			font-weight=700
+			font-size=20
+		}
+	}
 
 	layout {
-		place { control=BorrowersLabel width=max }
-		place { control=BorrowersList dir=down width=max height=120 start=BorrowersLabel y=20 }
-		place {
-			control=AuthorizedDeviceCheck,ShowNotificationsCheck
-			dir=down start=BorrowersList width=max y=10
-		}
-		place { control=ManageSharingLabel dir=down start=ShowNotificationsCheck y=10 }
-
-		place { control=FamilyOptionsText dir=down width=max start=ManageSharingLabel y=30 }
+		place { controls=FamilyOptionsTitle height=20 width=max }
+		place { control=FamilyOptionsText dir=down width=max start=FamilyOptionsTitle y=15 }
 		place { control=ManageOptionsLabel dir=down start=FamilyOptionsText y=10 }
 
-		place { control=Divider1,FamilySharingInfoText,FamilySharingTitle,FamilyOptionsTitle height=0 width=0 }
+		place { controls=Divider1 dir=down start=ManageOptionsLabel width=max y=10 }
+
+		place { control=FamilySharingTitle dir=down start=Divider1 height=20 width=max y=20 }
+		place { control=FamilySharingInfoText dir=down start=FamilySharingTitle width=max y=15 }
+		place { control=AuthorizedDeviceCheck dir=down start=FamilySharingInfoText width=max y=10 }
+		place { control=ManageSharingLabel dir=down start=AuthorizedDeviceCheck y=10 }
+
+		place { control=BorrowersLabel dir=down start=ManageSharingLabel height=20 width=max y=20 }
+		place { control=BorrowersList dir=down start=BorrowersLabel width=max height=120 y=15 }
+		place { control=ShowNotificationsCheck dir=down start=BorrowersList width=max y=10 }
 	}
 }
