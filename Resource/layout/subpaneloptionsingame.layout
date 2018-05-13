@@ -4,11 +4,18 @@
 		place { control=HotKeySelectorLabel dir=down }
 		place { control=HotKeySelector dir=down width=max start=HotKeySelectorLabel }
 		place {
-			control=EnableOverlayCheck,EnableSCTenFootOverlayCheck,EnableVRDesktopGameTheaterCheck
+			control=EnableOverlayCheck
 			dir=down start=HotKeySelector width=max y=5
 		}
 
-		place { control=ShowIngameFPSLabel dir=down start=EnableVRDesktopGameTheaterCheck y=40 }
+		place [!$OSX&&!$LINUX] {
+			control=EnableSCTenFootOverlayCheck,EnableVRDesktopGameTheaterCheck
+			dir=down start=EnableOverlayCheck width=max y=5
+		}
+
+		place [$OSX||$LINUX]{ control=ShowIngameFPSLabel dir=down start=EnableOverlayCheck y=40 }
+		place [!$OSX&&!$LINUX] { control=ShowIngameFPSLabel dir=down start=EnableVRDesktopGameTheaterCheck y=40 }
+
 		place { control=ShowIngameFPSCombo dir=down width=max start=ShowIngameFPSLabel y=5 }
 		place { control=ShowIngameFPSContrastCheck dir=down start=ShowIngameFPSCombo y=5 }
 
