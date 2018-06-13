@@ -2,6 +2,15 @@ resource/layout/steamrootdialog.layout {
 
 	styles {
 
+		announcement_button
+		{
+			render_bg
+			{
+				// background fill
+				1="image( x1-24, y0+18, x1 -2, y1 + 1, graphics/updatenone_notification )"
+			}
+		}
+
 		RootMenu {
 			bgcolor=none
 		}
@@ -14,18 +23,6 @@ resource/layout/steamrootdialog.layout {
 			textcolor=none
 		}
 
-		view_friends {
-			textcolor=none
-		}
-
-		online_friends {
-			textcolor=A2TextPrimary
-
-			padding-left=20
-			padding-right=20
-			bgcolor=none
-		}
-
 		support_alert {
 			padding-left=50
 			padding-right=50
@@ -36,34 +33,34 @@ resource/layout/steamrootdialog.layout {
 			render_bg { }
 		}
 
-	    inbox_button {
-	      textcolor=none
-	      render_bg {
-	        0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox )"
-	      }
-	    }
+		inbox_button {
+			textcolor=none
+			render_bg {
+				0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox )"
+			}
+		}
 
-	    inbox_button:selected {
-	      textcolor=none
-	      render_bg {
-	        0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
-	        1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox )"
-	      }
-	    }
+		inbox_button:selected {
+			textcolor=none
+			render_bg {
+				0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
+				1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox )"
+			}
+		}
 
-	    inbox_button_active {
-	      textcolor=none
-	      render_bg {
-	        0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active )"
-	      }
-	    }
+		inbox_button_active {
+			textcolor=none
+			render_bg {
+				0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active )"
+			}
+		}
 
-	    inbox_button_active:selected {
-	      render_bg {
-	        0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
-	        1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active )"
-	      }
-	    }
+		inbox_button_active:selected {
+			render_bg {
+				0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
+				1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active )"
+			}
+		}
 
 		parental_lock_button {
 			image=graphics/none
@@ -100,16 +97,39 @@ resource/layout/steamrootdialog.layout {
 
 	layout {
 		region { name=header height=50 width=max }
-			place [!$OSX] { control=frame_minimize,frame_maximize,frame_close height=22 width=22 y=13 align=right margin-right=20 }
-			place [$OSX] { control=frame_close,frame_minimize,frame_maximize height=22 width=22 y=13 align=left margin-left=20 }
+			place { control=frame_minimize,frame_maximize,frame_close region=header height=22 width=22 y=13 align=right margin-right=20 }
 			place { control=frame_captiongrip margin=2 width=max height=50 }
 
 			place [!$OSX] { control=MenuBar align=top width=45 height=49 }
 
 			place { control=ParentalLockButton region=header align=right height=30 width=30 align=right }
-			place [!$OSX] { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=122 }
-			place [$OSX] { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=20 }
-			place { control=account_balance region=header align=right y=11 height=30 margin-right=24 end-right=InboxButton }
+
+			place {
+				control=InboxButton
+				end-right=frame_minimize
+				region=header
+				align=right
+				y=7
+				height=50
+				width=36
+			}
+
+			place {
+				control="AnnouncementButton"
+				align=right
+				end-right="InboxButton"
+				margin-right=8
+				height=50
+				width=34
+			}
+
+			place {
+				control=AccountButton
+				end-right=AnnouncementButton
+				region=header
+				align=right
+				height=50
+			}
 
 		place { control=UINavigatorPanel width=max height=max margin-bottom=46 }
 
@@ -122,6 +142,7 @@ resource/layout/steamrootdialog.layout {
 
 		place {
 			control=UIStatusPanel
+			region=bottom
 			align=bottom
 			width=max
 			height=46
@@ -133,18 +154,7 @@ resource/layout/steamrootdialog.layout {
 			region=bottom
 			align=right
 			dir=right
-			y=6
-			height=34
-			margin-right=6
-		}
-
-		place {
-			control=online_friends
-			region=bottom
-			align=right
-			dir=right
-			y=6
-			height=34
+			height=46
 			margin-right=6
 		}
 

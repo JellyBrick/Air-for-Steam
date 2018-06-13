@@ -1,0 +1,11 @@
+"resource/layout/accountbutton.layout"
+{
+	layout
+	{
+		place { control="account_menu_button" align=left height=50 width=max } // span over everything
+		place { control="account_balance" align=right height=50 }
+		place { control="account_drop_down" align=right end-right="account_balance" margin-top=1  height=50 width=8 }
+		place { control="account_persona" align=right end-right="account_drop_down" margin-top=1  height=50 }
+		place { control="account_avatar" align=right end-right="account_persona" height=30 width=30 margin-top=10 }
+	}
+}
